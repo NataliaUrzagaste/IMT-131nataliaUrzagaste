@@ -9,3 +9,10 @@ Tiene como objetivo introducir lenguajes y entornos de programación específico
 
 ### Competencia de la Asignatura
 Implementar algoritmos sobre entornos de desarrollo para aplicaciones de sistemas embebidos.
+
+#TAREA 1
+## INSTRUCCION 1
+
+## INSTRUCCION 2
+
+## INSTRUCCION 3
