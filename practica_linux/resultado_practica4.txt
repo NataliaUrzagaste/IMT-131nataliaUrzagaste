@@ -1,0 +1,28 @@
+Ejercicio 1: Buscar error en log.txt
+error: memoria llena
+error: archivo no encontrado
+Ejercicio 2: Buscar info en log.txt
+info: proceso iniciado
+info: proceso terminado
+Ejercicio 3: Contar lineas de nombres.txt
+6 datos/nombres.txt
+Ejercicio 4: Contar apariciones de ana
+2
+Ejercicio 5: Ordenar nombres alfabeticamente
+ana
+ana
+juan
+juan
+maria
+pedro
+Ejercicio 6: Buscar archivos .txt
+./resultado_practica4.txt
+./datos/log.txt
+./datos/nombres.txt
+Ejercicio 7: Contar archivos .txt
+3
+Ejercicio 7: Contar archivos .txt
+3
+Ejercicio 8: Buscar error y ordenar
+error: archivo no encontrado
+error: memoria llena
