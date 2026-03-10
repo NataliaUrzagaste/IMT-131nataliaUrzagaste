@@ -1,0 +1,50 @@
+  309  cd ..
+  310  mkdir logs
+  311  cd logs
+  312  hostname > sistema.log
+  313  whoami >> sistema.log
+  314  uptime >> sistema.log
+  315  cat sistema.log
+  316  chmod 444 sistema.log
+  317  ls -l
+  318  mkdir src docs data
+  319  ls
+  320  ls -a
+  321  mv *Instrucciones_Practicas.pdf data/
+  322  mv *.pdf data/
+  323  mv Instrucciones_Practica.pdf data/
+  324  mv *Instrucciones_Practica.pdf data/
+  325  cd ..
+  326  cd .consiga/
+  327  cd .consigna/
+  328  mv *.pdf data/
+  329  mv .COMUNICADO.txt data/
+  330  mv *.pdf data/
+  331  ls -l
+  332  mv Instrucciones_practica.pdf .COMUNICADO.txt data/
+  333  cd ..
+  334  mv Instrucciones_Practica.pdf .COMUNICADO.txt data/
+  335  cd logs
+  336  mv Instrucciones_Practica.pdf .COMUNICADO.txt data/
+  337  cd ..
+  338  tree
+  339  tree -p
+  340  tree -pa
+  341  mv .consigna/* logs/data/
+  342  tree -pa
+  343  mv .consigna/.COMUNICADO.txt logs/data/
+  344  tree -pa
+  345  rm -r .consigna
+  346  ls -a
+  347  tree -pa
+  348  cd src
+  349  cd logs
+  350  cd src
+  351  nano check_engine.sh
+  352  chmod 700 check_engine.sh
+  353  ./check_engine.sh
+  354  ls -l
+  355  cd ..
+  356  history 40 > comandos.txt
+  357  cat comandos.txt
+  358  history 50 > comandos.txt
