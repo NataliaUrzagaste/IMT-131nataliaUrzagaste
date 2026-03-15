@@ -1,0 +1,16 @@
+14 datos/usuarios.txt
+6
+ana
+ana
+ana
+ana
+juan
+juan
+juan
+juan
+lucas
+lucas
+maria
+maria
+pedro
+pedro

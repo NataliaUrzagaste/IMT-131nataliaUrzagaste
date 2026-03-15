@@ -1,0 +1,119 @@
+mkdir datos scripts reportes backup
+ls -l
+total 20
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 backup
+-rw-rw-r-- 1 mileroom mileroom   42 mar 15 18:45 comandos_practica.txt
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:28 datos
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 reportes
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 scripts
+cd datos
+echo "ana" >> usuarios.txt
+echo "juan" >> usuarios.txt
+echo "pedro" >> usuarios.txt
+echo "ana" >> usuarios.txt
+echo "maria" >> usuarios.txt
+echo "juan" >> usuarios.txt
+echo "lucas" >> usuarios.txt
+echo "info: login correcto ana" >> accesos.log
+echo "error: contrasena incorrecta juan" >> accesos.log
+echo "info: login correcto maria" >> accesos.log
+echo "warning: intento sospechoso pedro" >> accesos.log
+cd ..
+ejercicio1
+ls -l
+total 20
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 backup
+-rw-rw-r-- 1 mileroom mileroom  785 mar 15 19:09 comandos_practica.txt
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:57 datos
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 reportes
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 scripts
+ejercicio2
+ls datos
+accesos.log
+usuarios.txt
+ejercicio3
+ls -l datos
+total 8
+-rw-rw-r-- 1 mileroom mileroom 432 mar 15 19:01 accesos.log
+-rw-rw-r-- 1 mileroom mileroom  72 mar 15 19:01 usuarios.txt
+ejercicio5
+find . -name "*.txt"
+./comandos_practica.txt
+./datos/usuarios.txt
+ejercicio6
+find . -name "*.log"
+./datos/accesos.log
+find . -name "*.txt" | wc -l
+2
+ejercicio7
+grep "error" datos/accesos.log
+error: contrasena incorrecta juan
+error: usuario no encontrado carlos
+error: contrasena incorrecta ana
+error: contrasena incorrecta juan
+error: usuario no encontrado carlos
+error: contrasena incorrecta ana
+ejercicio8
+grep "error" datos/accesos.log | wc -l
+6
+ejercicio9
+grep "info" datos/accesos.log
+info: login correcto ana
+info: login correcto maria
+info: login correcto lucas
+info: login correcto ana
+info: login correcto maria
+info: login correcto lucas
+ejercicio10
+sort datos/usuarios.txt
+ana
+ana
+ana
+ana
+juan
+juan
+juan
+juan
+lucas
+lucas
+maria
+maria
+pedro
+pedro
+ejercicio11
+wc -l datos/usuarios.txt
+14 datos/usuarios.txt
+ejercicio 12
+grep "error" datos/accesos.log | sort
+error: contrasena incorrecta ana
+error: contrasena incorrecta ana
+error: contrasena incorrecta juan
+error: contrasena incorrecta juan
+error: usuario no encontrado carlos
+error: usuario no encontrado carlos
+wc -l datos/usuarios.txt > reportes/reporte_sistema.txt
+grep "error" datos/accesos.log | wc -l >> reportes/reporte_sistema.txt
+sort datos/usuarios.txt >> reportes/reporte_sistema.txt
+cd scripts
+touch analisis.sh
+echo 'wc -l ../datos/usuarios.txt' >> analisis.sh
+echo 'grep "error" ../datos/accesos.log | wc -l' >> analisis.sh
+echo 'sort ../datos/usuarios.txt' >> analisis.sh
+chmod +x analisis.sh
+./analisis.sh
+14 ../datos/usuarios.txt
+6
+ana
+ana
+ana
+ana
+juan
+juan
+juan
+juan
+lucas
+lucas
+maria
+maria
+pedro
+pedro

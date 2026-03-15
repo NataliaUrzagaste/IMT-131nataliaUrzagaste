@@ -1,0 +1,43 @@
+mkdir datos scripts reportes backup
+ls -l
+total 20
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 backup
+-rw-rw-r-- 1 mileroom mileroom   42 mar 15 18:45 comandos_practica.txt
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:28 datos
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 reportes
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 scripts
+cd datos
+echo "ana" >> usuarios.txt
+echo "juan" >> usuarios.txt
+echo "pedro" >> usuarios.txt
+echo "ana" >> usuarios.txt
+echo "maria" >> usuarios.txt
+echo "juan" >> usuarios.txt
+echo "lucas" >> usuarios.txt
+echo "info: login correcto ana" >> accesos.log
+echo "error: contrasena incorrecta juan" >> accesos.log
+echo "info: login correcto maria" >> accesos.log
+echo "warning: intento sospechoso pedro" >> accesos.log
+cd ..
+ejercicio1
+ls -l
+total 20
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 backup
+-rw-rw-r-- 1 mileroom mileroom  785 mar 15 19:09 comandos_practica.txt
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:57 datos
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 reportes
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:41 scripts
+ejercicio2
+ls datos
+accesos.log
+usuarios.txt
+ejercicio3
+ls -l datos
+total 8
+-rw-rw-r-- 1 mileroom mileroom 432 mar 15 19:01 accesos.log
+-rw-rw-r-- 1 mileroom mileroom  72 mar 15 19:01 usuarios.txt
+ejercicio4
+find . -name "*.txt"
+./comandos_practica.txt
+./datos/usuarios.txt
+ejercicio5
