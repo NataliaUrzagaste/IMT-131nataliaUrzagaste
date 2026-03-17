@@ -1,0 +1,10 @@
+mkdir practica_sistema
+cd practica_sistema
+mkdir datos
+mkdir scripts
+mkdir reportes
+mkdir backup
+ls -l
+total 8
+-rw-rw-r-- 1 mileroom mileroom    1 mar 15 18:25 comandos_practica.txt
+drwxrwxr-x 2 mileroom mileroom 4096 mar 15 18:28 datos
