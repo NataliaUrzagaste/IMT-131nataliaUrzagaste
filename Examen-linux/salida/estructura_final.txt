@@ -1,0 +1,20 @@
+.
+├── datos
+│   ├── errores.log
+│   └── usuarios.txt
+├── docs
+│   ├── ayuda.txt
+│   └── notas_final.txt
+├── entrada
+├── .info
+│   └── .consigna.txt
+├── recursos
+│   └── .consigna.txt
+├── salida
+│   ├── estructura_final.txt
+│   ├── permisos.txt
+│   └── resultado_examen.txt
+├── scripts
+│   └── script.sh
+└── trabajo
+    └── borrador.txt
